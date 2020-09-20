@@ -1,0 +1,145 @@
+.theme-light {
+  --bg: #faf3dd;
+  --primary: #5e6472;
+  --color-accent: #5e6472;
+  --font-color: #242423;
+}
+.theme-dark {
+  --bg: #242423;
+  --primary: #5e6472;
+  --color-accent: #5e6472;
+  --font-color: #faf3dd;
+}
+
+html {
+  background-color: var(--bg);
+  scroll-behavior: smooth;
+}
+/* =========================================================================
+ * TEXT
+ * ========================================================================= */
+
+/* TEXT BASIS
+ * ------------------------------------------------------------------------- */
+
+.text {
+  display: block;
+
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+
+  line-height: 1.5;
+  white-space: normal;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+
+/* SPECIFIC TEXTS
+ * ------------------------------------------------------------------------- */
+
+.text--oneline {
+  white-space: nowrap;
+}
+.button.isSwitch {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--bg);
+  padding: 0;
+  margin: 10px;
+  border: none;
+  outline: 0;
+  align-self: center;
+}
+.button.isSwitch:hover {
+  opacity: 0.9;
+}
+.switchBulb {
+  color: var(--bg);
+}
+.navbar {
+  background-color: var(--font-color);
+}
+.navbar-item {
+  color: var(--bg);
+}
+.navbar.is-fixed-bottom.is-transparent {
+  justify-content: flex-end;
+}
+nav.navbar {
+  min-height: unset;
+  height: 40px !important;
+  align-items: center;
+}
+
+
+@media all and (max-width: 1024px) {
+  .navbar-brand {
+    justify-content: space-evenly;
+    color: red;
+    min-height: unset;
+    height: 40px !important;
+  }
+  .columns {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 10rem;
+  }
+}
+@media all and (max-width: 1200px) {
+  .columns {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .columns:not(.is-desktop) {
+    display: flex;
+    padding-bottom: 10rem;
+  }
+}
+a,
+h1,
+h2,
+h3,
+h4,
+li,
+p,
+span,
+strong {
+  color: var(--font-color);
+}
+blockquote p {
+  color: var(--bg)
+}
+.navbar-item span {
+  color: var(--bg);
+}
+.card-footer-item span {
+  color: var(--bg);
+}
+
+p {
+  font-family: Quicksand, sans-serif;
+  font-weight: 400;
+}
+
+a:hover,
+a.blog-post-read-link:hover,
+i:hover, 
+.blog-post h1 > a:hover,
+span:hover{
+  color: #87ceeb;
+}
+
+ul {
+  list-style: circle;
+  padding-left: 2em;
+}
+.revenir {
+  
+    display: inline-block;
+    margin: 0.5em 50%;
+    position: relative;
+
+}
