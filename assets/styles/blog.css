@@ -1,39 +1,46 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 .blog {
-  line-height: 1, 5rem;
-  word-break: break-word;
-  border-color: var(--font-color);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0 0 0 4px;
-  padding: 1.25em 1.5em;
-  max-width: 70vw;
-  display: flex;
-  justify-content: center;
-  margin: 1rem auto 4rem auto;
-  flex-direction: column-reverse;
+	line-height: 1, 5rem;
+	word-break: break-word;
+	border-color: var(--font-color);
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 0 0 0 4px;
+	padding: 0;
+	max-width: 95vw;
+	display: flex;
+	justify-content: center;
+	margin: 1rem auto 4rem auto;
+	flex-direction: column-reverse;
+	box-sizing: border-box;
 }
 
+@media (min-width: 700px) {
+	.blog {
+		padding: 1.25em 1.5em;
+		max-width: 70vw;
+	}
+}
 .blog-post:not(:first-child) {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .blog-post h1 > a {
-	color:var(--font-color);
-	font-size:2.5rem;
+	color: var(--font-color);
+	font-size: 2.5rem;
 }
 .markdown {
 	padding: 1.5rem;
 }
 
 .markdown h1 {
-  text-align: center;
-  font-size:3rem;
+	text-align: center;
+	font-size: 3rem;
 }
 .markdown > h1 {
 	margin-bottom: 1rem;
@@ -43,8 +50,8 @@ body {
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  text-align: left;
-  margin-top: 2rem;
+	text-align: left;
+	margin-top: 2rem;
 }
 
 .markdown blockquote {
@@ -79,15 +86,21 @@ body {
 
 .markdown img {
 	display: block;
-	padding:1em;
+	padding: 1em;
 	margin: auto;
 }
-blockquote p {color: var(--bg);}
+blockquote p {
+	color: var(--bg);
+}
 
 a.blog-post-read-link {
-    padding: 1em;
-    display: inline-block;
-    background: var(--font-color);
-    color: var(--bg);
-    margin-top: 1em;
+	padding: 1em;
+	display: inline-block;
+	background: var(--font-color);
+	color: var(--bg);
+	margin-top: 1em;
+}
+
+.markdown a {
+	text-decoration: underline;
 }

@@ -18,7 +18,7 @@ if (file_exists($page)) {
 <html lang="en">
 <head>
     <?php include './partials/_head.php'; ?>
-    <link rel="stylesheet" href="./assets/styles/blog.min.css">
+    <link rel="stylesheet" href="./assets/styles/blog.css">
     <title><?php echo $pageTitle ?></title>
 </head>
 <body>

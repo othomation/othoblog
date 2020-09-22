@@ -29,6 +29,9 @@ Dans mon cas, j'ai l'habitude de mes polices de caractères, raccourcis, extensi
 Au bout des quatres jours, nous avions fait un petit site qui présente une ville (pour ma part: Villeurbanne !) ce qui nous a permis de nous présenter les concepts de bases du HTML & du CSS.
 
 Voici le [repo github](https://github.com/othomation/wf3-coding-bootcamp-SAS).
+
+Voici une [version live](http://otho.bike/blog/sites/coding-bootcamp).
+
 Et voici une capture d'écran :
 ![Capture d'écran du site web réalisé durant le SAS d'intégration. On y voit un page concernant la ville de Villeurbanne.](./assets/img/code_1.png "Capture d'écran du site web réalisé durant le SAS d'intégration. On y voit un page concernant la ville de Villeurbanne.")
 
