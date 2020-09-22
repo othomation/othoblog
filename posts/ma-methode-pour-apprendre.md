@@ -58,3 +58,5 @@ Et souvent, on lit *plus* d'une fois. Donc autant exploiter ça.
 Personellement, j'ai **besoin** de faire plusieurs choses en même temps pour rester concentré.
 
 Lors de première écoute/lecture passive, en faisant autre chose qui me plaît (dans mon cas, je joue jeu vidéo Dofus
+
+> W O R K IN  P R O G R E S S ---- not pushed to remote ftp
