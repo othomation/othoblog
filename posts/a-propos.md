@@ -9,7 +9,7 @@ Otho, 23 ans, j'essaye d'être dev web après avoir passé pas mal de temps à f
 
 ## Ta formation, c'est quoi ?
 
-C'est une formation de développement web et web mobile. Vous pouvez lire le [syllabus](https:/otho.bike/wf3).
+C'est une formation de développement web et web mobile. Vous pouvez lire le [syllabus](../wf3).
 
 Précisemment, c'est un parcours ouvert (et reservé) aux autsites asperger, ou _aspie_.
 
