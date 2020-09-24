@@ -28,26 +28,26 @@ Top 📚 !
 
 Pour commencer, je vais écrire sous forme de liste plus ou moins exhaustive, les étapes d'une session d'apprentissage.
 
->1. Formaliser ce dont j'ai besoin.
->		- Savoir ce que ma tâche a besoin
->		- Savoir ce que je sais déjà
->		- Savoir ce que je ne sais pas
+1. Formaliser ce dont j'ai besoin.
+	- Savoir ce que ma tâche a besoin
+	- Savoir ce que je sais déjà
+	- Savoir ce que je ne sais pas
 
->2. Trouver et choisir un contenu à exploiter / consommer
->		- Cours écrit
->		- Cours intéractif
->		- Cours vidéo / audio
+2. Trouver et choisir un contenu à exploiter / consommer
+	- Cours écrit
+	- Cours intéractif
+	- Cours vidéo / audio
 
->3. Choisir une activité à faire, à côté, pendant la première consommation _**passive**_
->		- Jeu vidéo calme
->		- Série / Film
->		- Activité manuelle
+3. Choisir une activité à faire, à côté, pendant la première consommation _**passive**_
+	- Jeu vidéo calme
+	- Série / Film
+	- Activité manuelle
 
->4. Seconde consommation du contenu _**active**_ et mise en pratique
+4. Seconde consommation du contenu _**active**_ et mise en pratique
 
->5. ???
+5. ???
 
->6. Profit !
+6. Profit !
 
 ---
 
