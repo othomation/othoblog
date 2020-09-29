@@ -1,0 +1,95 @@
+body {
+	--gray: #636363;
+	--blue: #0000ff;
+	--blueIta: #008cad;
+	--blueSection: #e7f4f7;
+
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 90%;
+}
+
+/* ----------------------- 
+---- LAYOUT --------------
+----------------------- */
+section {
+	display: flow-root;
+
+	width: 665px;
+
+	margin: 1em auto;
+	padding: 0.5em;
+
+	background-color: var(--blueSection);
+
+	background-image: url("../img/fond-num.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+
+	box-shadow: 0 0 3px 0 var(--gray);
+}
+
+figure {
+	margin: 0 1em 0.5em 0;
+	float: left;
+}
+
+.date {
+	font-size: 0.7em;
+	text-align: right;
+}
+
+/* -----------------------
+---- TEXT ----------------
+----------------------- */
+h2 {
+	margin: 0;
+	padding: 0.1em;
+
+	background-image: url("../img/fd-degrade.png");
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: -8em;
+}
+
+section {
+	font-family: Arial, Helvetica, sans-serif;
+	overflow:auto;
+}
+article p {
+	line-height: 1.3em;
+}
+
+q {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: 600;
+	color: var(--blueIta);
+
+	font-style: italic;
+}
+
+strong {
+	color: var(--blue);
+}
+
+/* -----------------------
+---- LINKS | LISTS -------
+----------------------- */
+a {
+	color: var(--gray);
+}
+
+.emLink {
+	font-weight: 600;
+}
+
+ul {
+	margin-left: 1em;
+	padding-left: 0.1em;
+
+	list-style: square;
+}

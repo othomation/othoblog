@@ -1,0 +1,114 @@
+/* -------------------------------------------------------- 
+-- CSS MAIN FOR WIKI SITE -- 
+----------------------------------------------------------- */
+
+/* ---- RESETS | VARIABLES---- */
+* {
+	--wikiBlue: #0645ad;
+	--wikiShadow: #999;
+	--wikiBorder: #bdd8fb;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* ================ */
+/* ---- LAYOUT ---- */
+/* ================ */
+
+/* -- CONTAINER -- */
+.container__sectionArticle {
+	margin: 1em 1em 2em 1em;
+	padding: 1em 1em 4em 1em;
+
+	box-shadow: 0 0 4px var(--wikiShadow);
+	border-radius: 4px;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+
+/* -- IMAGE | LINKS -- */
+.image__sideArticle {
+	float: right;
+	margin: 0.5em 1em 1em 1em;
+}
+
+.link__catArticle ul {
+	margin: 1em 0 0 0;
+	padding: 0;
+
+	list-style-type: none;
+
+	text-align: right;
+}
+
+.link__catArticle li {
+	display: inline;
+	font-weight: 600;
+}
+
+/* .link__catArticle li:not(:last-child) {
+	margin-right: 1em;
+} */
+
+.link__readArticle {
+	margin-left: 1em;
+}
+
+.link__catArticle li:not(:first-child)::before {
+	content: ".";
+	display: inline-block;
+	width: 0.5rem;
+	font-weight: 900;
+	position: relative;
+	bottom: 0.25em;
+	right: 0.2em;
+}
+
+/* ========================== */
+/* ---- TEXT | PARAGRAPHS---- */
+/* ========================== */
+.titleArticle h2 {
+	margin: 0px 10px 0.5em 0;
+
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: 1.3em;
+	font-variant: small-caps;
+
+	border-bottom: 2px solid var(--wikiBorder);
+}
+
+.container__paraArticle {
+	line-height: 1.8em;
+	text-align: justify;
+}
+
+a {
+	color: var(--wikiBlue);
+	text-decoration: none;
+}
+
+/* ===================== */
+/* ---- DECORATION ---- */
+/* ==================== */
+
+/* .star::before {
+	content: url("../img/etoileGrise.svg");
+	display: inline-block; 
+
+	width: 1rem;
+	padding-right: 0.3em;
+
+	transform: translate(0, 15%); 
+} */
+
+.star {
+	padding-left: 20px;
+
+	background-image: url("../img/etoileGrise.svg");
+	background-repeat: no-repeat;
+	background-size: 15px;
+}
