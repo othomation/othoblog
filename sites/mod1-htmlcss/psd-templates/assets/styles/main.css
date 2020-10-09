@@ -1,0 +1,311 @@
+/* =======================================
+==== RESETS & VARIABLES ==================
+======================================= */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	--bg__nav-gray: #373c3f;
+	--bg__heroStart: #0da4ba;
+	--bg__heroEnd: #0889a6;
+	--bg__robin: #27212c;
+	--bg__arrow-pink: #bc3183;
+	--bg__arrow-purple: #5b0fa1;
+	--bg__article: #ebebeb;
+
+	--text__nav: var(--bg__article);
+	--text__hero: #fff;
+	--text__heroSub: rgba(255, 255, 255, 0.5);
+	--text__robin: #9282a0;
+	--text__paraTitle: #088ca5;
+	--text__para: #515151;
+
+	--size__arrowBig: 1.2em;
+	--size__arrowLittle: 0.6em;
+}
+
+/* ==== MONTSERRAT REGULAR || QUICKSAND BOLD ==== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@700&display=swap"); /* font-family: 'Montserrat', sans-serif;
+
+/* =======================================
+==== FONTS ==============================
+======================================= */
+#nav__desktop,
+.header h1,
+.header em,
+h2,
+article p {
+	font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.robin {
+	font-family: "Quicksand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* =======================================
+==== LAYOUT ==============================
+======================================= */
+#container {
+	display: flex;
+
+	flex-direction: column;
+
+	margin: auto;
+	width: 1024px;
+}
+
+/* =======================================
+==== NAV (desktop) =======================
+======================================= */
+ul {
+	display: flex;
+
+	margin: 0;
+	padding: 1.5em;
+
+	list-style: none;
+
+	background-color: var(--bg__nav-gray);
+}
+
+li:not(:first-child) {
+	margin-left: 1em;
+}
+
+li a {
+	text-decoration: none;
+	text-transform: uppercase;
+
+	padding: 0.3em;
+
+	color: var(--text__nav);
+}
+li a:hover {
+	opacity: 0.8;
+	font-weight: 700;
+
+	transition-property: opacity, color, font-weight;
+	transition-duration: 500ms, 500ms, 100ms;
+
+	color: var(--bg__heroStart);
+}
+
+li a:active,
+li a:focus {
+	border-radius: 0.3em;
+
+	background: white;
+	color: var(--bg__nav);
+}
+/* =======================================
+==== NAV (mobile) ========================
+======================================= */
+
+
+
+.c__burger {
+	display: none;
+	background: #333;
+	width: 52px;
+	height: 40px;
+	position: fixed;
+	top:0;
+	right:0;
+}
+
+.burger {
+	background-color: white;
+	width: 30px;
+	height: 3px;
+	position: fixed;
+	top: 20px;
+	right: 10px;
+}
+
+.burger::before,
+.burger::after {
+	content: "";
+	background-color: inherit;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+}
+
+.burger::before {
+	top: -8px;
+}
+.burger::after {
+	top: 8px;
+}
+/* =======================================
+==== HERO BANNER =========================
+======================================= */
+header {
+	display: flex;
+
+	flex-direction: column;
+	justify-content: center;
+
+	padding: 0 5em;
+	height: 400px;
+	background: var(--bg__heroStart);
+	background: linear-gradient(130deg, var(--bg__heroStart), var(--bg__heroEnd));
+}
+.header {
+	width: fit-content;
+}
+.header div {
+	display: flex;
+
+	justify-content: space-between;
+	align-items: baseline;
+
+	width: 80%;
+
+	margin-top: 1.5em;
+}
+
+.header h1 {
+	width: 80%;
+
+	font-size: 3em;
+	font-weight: normal;
+
+	color: var(--text__hero);
+}
+
+.header div em {
+	font-style: normal;
+	font-size: 1.2em;
+
+	color: var(--text__heroSub);
+}
+
+/* =======================================
+==== ROBIN BANNER ========================
+======================================= */
+section:nth-of-type(1) {
+	display: inline-flex;
+
+	place-items: center;
+
+	height: 10em;
+
+	color: var(--text__robin);
+	background-color: var(--bg__robin);
+}
+
+section:nth-of-type(1) > .robin {
+	display: flex;
+
+	justify-content: center;
+	flex: 5;
+
+	font-size: 1.5em;
+}
+
+section:nth-of-type(1) figure {
+	display: flex;
+
+	justify-content: center;
+	flex: 1;
+
+	height: inherit;
+
+	background: var(--bg__arrow-pink);
+}
+
+/* =======================================
+==== THREE COL BANNER ====================
+======================================= */
+section:nth-of-type(2) {
+	display: flex;
+	height: calc(1024px / 3);
+}
+section:nth-of-type(2) figure {
+	width: calc(100em / 3);
+
+	display: inline-flex;
+
+	overflow: hidden;
+	max-width: 100%;
+	max-height: 100%;
+
+	user-select: none;
+}
+
+figure > div {
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+	background: var(--bg__arrow-purple);
+}
+
+section:nth-of-type(2) figure > img {
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+/* =======================================
+==== TWO COL ARTICLE =====================
+======================================= */
+section:nth-of-type(3) {
+	display: flex;
+
+	flex-direction: column;
+	padding: 3em;
+
+	background-color: var(--bg__article);
+}
+
+section h2 {
+	margin-bottom: 0.5em;
+
+	font-weight: normal;
+	font-size: 2.5rem;
+
+	color: var(--text__paraTitle);
+}
+
+article {
+	display: flex;
+	justify-content: space-between;
+}
+
+article div:first-child {
+	margin-right: 4em;
+}
+
+article p {
+	line-height: 1.8em;
+	margin-bottom: 1em;
+}
+
+/* =======================================
+==== IMAGES ==============================
+======================================= */
+.arrow.little img {
+	width: var(--size__arrowLittle);
+}
+.arrow.big img {
+	width: var(--size__arrowBig);
+	user-select: none;
+}
+figure.arrow.big:hover {
+	cursor: normal;
+}
+
+figure.arrow.big:hover img {
+	transform: scale(2);
+	transition: transform 500ms;
+}

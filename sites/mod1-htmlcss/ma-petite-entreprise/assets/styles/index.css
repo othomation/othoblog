@@ -1,0 +1,62 @@
+/* ======================================== */
+/* === CONTENT SECTION ==================== */
+/* ======================================== */
+section {
+	display: flex;
+
+	width: 600px;
+
+	gap: 20px;
+	padding: 20px;
+}
+
+section article + article {
+    margin-top:20px;
+}
+
+/* ============================ ARTICLE === */
+article {
+	padding: 10px;
+	height: fit-content;
+}
+
+.col-2 article {
+	padding-right: 80px;
+    width: 380px;
+}
+section > article {
+	width: 160px;
+}
+
+/* ============================== LIST ===  */
+article li + li {
+	margin-top: 1em;
+}
+
+/* -- TOP PRODUCT -- */
+article ol li {
+	text-indent: -14px;
+	margin-left: 10px;
+}
+
+ol {
+	padding-left: 3px;
+	list-style-position: inside;
+}
+
+/* -- ACTUALITE -- */
+li > span {
+	display: block;
+}
+
+.date {
+	font-weight: 600;
+}
+
+/* ========================= BLOCKQUOTE === */
+blockquote > p:first-child {
+	font-style: italic;
+}
+blockquote p + p {
+	text-align: end;
+}

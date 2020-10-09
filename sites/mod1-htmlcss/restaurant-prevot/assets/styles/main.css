@@ -1,0 +1,325 @@
+/* =============================================================================
+MOCKUP ---- ROOT:/assets/img/mockup.jpg
+================================================================================
+COMMENTS -- Le fichier est abusément commenté, pour expliquer, dans le
+			cadre de l'exercice ce que fait le code. Afin d'expliciter.
+================================================================================
+COLORS ---- Certaines variables partagent le même code couleur, mais pour
+				une question de lisibilité, et de maintenance potentielle, je
+				préfère les nommer tout de même.
+================================================================================
+FONTS ----- 
+				PLAYFAIR DISPLAY | 400 - 500
+				POPPINS | 400
+================================================================================
+GITHUB ---- LINK
+============================================================================= */
+
+/* -------------------------------------------------------------------------- */
+
+/* =============================================================================
+=== GLOBAL
+============================================================================= */
+
+/* On applique un font-size aux textes du document, qu'on pourra ajuster au vu 
+de l'utilisationde l'unité `em` pour la taille des dits textes */
+html {
+	font-size: 100%;
+}
+
+/* Applique un border-box à tout les élements, y compris les pseudo-élements
+concernés */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* DEFINITION DE LA LARGEUR ET MARGE GLOBALE */
+main {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+body,
+h1,
+h2,
+p,
+figure,
+ul {
+	margin: 0;
+}
+
+/* Dans les élements au dessus, aucun n'a du padding par défaut. C'est pour celà
+que nous appliquons un reset supplémentaire pour `ul` */
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:active {
+	opacity: 0.7 !important;
+}
+
+/* =============================================================================
+=== VARIABLES
+============================================================================= */
+body {
+	/* GLOBAL */
+	--text__paragraphe: #222222;
+
+	/* HEADER */
+	--bg__header: #665033;
+	--text__header: #ffd49b;
+
+	/* NAV */
+	--bg__nav: #bfbfbf;
+	--text__nav: #665003;
+
+	/* ROW ONE -- BIENVENUE AU RESTAURANT PRÉVÔT*/
+	--bg__r1-container: #fff;
+	--text__r1-header: #665003;
+	--text__r1-strong: #ff8d6a;
+	--misc__imgShadow: #827a7a;
+
+	/* ROW TWO -- VOTRE ACCUEUIL RESTAURANT PRÉVÔT */
+	--bg__r2-container: #827a7a;
+	--text__r2-header: #ffd49b;
+
+	/* FOOTER */
+	--bg__footer: #2e2c2c;
+	--misc__footerBorder: #ffd49b;
+	--text__footer: #856f51;
+
+	background-color: dimgray;
+}
+
+/* =============================================================================
+=== FONTS
+============================================================================= */
+h1,
+h2,
+footer {
+	font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+}
+
+p,
+strong,
+a {
+	font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =============================================================================
+=== MAIN 
+============================================================================= */
+
+/* ------ LINKS (~global~) -------------- */
+
+/* =============================================================================
+=== HEADER
+============================================================================= */
+header {
+	display: flex;
+	height: 124px;
+
+	justify-content: flex-end;
+
+	background-color: var(--bg__header);
+}
+
+header figure {
+	margin-left: 4em;
+}
+
+h1 {
+	position: relative;
+
+	margin-bottom: 0.1em;
+
+	align-self: flex-end;
+	height: fit-content;
+
+	text-transform: capitalize;
+	font-size: 5em;
+	font-weight: 400;
+
+	color: var(--text__header);
+}
+
+/* =============================================================================
+=== NAV
+============================================================================= */
+
+/* ------ LAYOUT (nav)-------------- */
+nav ul {
+	display: flex;
+	background-color: var(--bg__nav);
+}
+
+/* Nous permettons aux liens (en selectionnant leur conteneur, plutôt
+qu'eux mêmes) de prendre toute la largeur disponible. 
+C'est, dans le cas d'un menu en une ligne, équitablement espacé, une solution
+alternative à un `justify-content: space-evenly` : en mettant un `text-align: center`
+aux liens. celà permet donc de ne pas avoir d'espace 'vide', pour améliorer
+l'UX. */
+nav li {
+	flex-grow: 1;
+}
+
+nav a {
+	display: block;
+
+	height: 100%;
+	width: 100%;
+
+	padding: 0.5em 6em;
+
+	text-align: center;
+
+	text-transform: capitalize;
+
+	color: var(--text__nav);
+}
+
+/* ------ INTERACTIONS (nav) -------------- */
+nav a:hover,
+nav a:focus {
+	font-weight: 700;
+	background-color: var(--text__header);
+}
+
+/* Nous appliquons une transition uniquement sur l'état `:hover`,
+afin de rendre la naviation par tabulation (entre autres) plus simple
+et accessible. */
+nav a:hover {
+	transition: background-color 250ms ease-out;
+}
+
+/* =============================================================================
+/* === ROWs (r1 + r2) 
+============================================================================= */
+
+/* ------ LAYOUT (r1 + r2) -------------- */
+section {
+	padding: 15px 20px 50px 20px;
+}
+
+section h2 {
+	margin-bottom: 1em;
+}
+
+/* Placement des conteneurs dans ls `articles`.
+Utilisation du `margin-right` sauf sur le dernier enfant, afin d'éviter d'utiliser 
+`gap` (flexbox) qui n'est pas supporté en volume satisfaisant. */
+article {
+	display: flex;
+	justify-content: space-around;
+}
+
+article > *:not(:last-child) {
+	margin-right: 2em;
+}
+/* ------ IMGs & TEXTs (r1 + r2) -------------- */
+/* Le `inline-flex` nous permet d'avoir une `figure` qui a la même taille que l'image
+(img) qu'elle contient. */
+figure {
+	display: inline-flex;
+}
+
+p {
+	line-height: 1.8em;
+	text-align: justify;
+	word-break: break-all;
+}
+
+/* =============================================================================
+====== ROW ONE (r1)
+============================================================================= */
+
+/* ------ LAYOUT (r1) -------------- */
+#row-1 article div:first-child {
+	column-count: 3;
+	column-gap: 2em;
+}
+
+figure + figure {
+	margin-top: 1.2em;
+}
+
+#row-1 p + p {
+	margin-top: 2em;
+}
+
+/* ------ COLORs (r1) -------------- */
+#row-1 {
+	background-color: var(--bg__r1-container);
+}
+
+#row-1 h2 {
+	color: var(--text__r1-header);
+}
+
+#row-1 strong {
+	color: var(--text__r1-strong);
+}
+
+#row-1 figure {
+	box-shadow: 8px 8px var(--misc__imgShadow);
+}
+
+/* =============================================================================
+====== ROW TWO (r2)
+============================================================================= */
+
+/* ------ LAYOUT (r2) -------------- */
+figure.float__right {
+	float: right;
+	padding-left: 30px;
+}
+
+#row-2 p {
+	text-indent: 2em;
+}
+
+/* ------ COLORs | TEXTs (r2) -------------- */
+#row-2 {
+	background-color: var(--bg__r2-container);
+}
+
+#row-2 h2 {
+	color: var(--text__r2-header);
+}
+
+/* =============================================================================
+====== FOOTER
+============================================================================= */
+
+/* ------ LAYOUT (footer) -------------- */
+footer {
+	padding: 2em;
+
+	border-top: var(--misc__footerBorder) 4px solid;
+
+	color: var(--text__footer);
+	background-color: var(--bg__footer);
+}
+
+footer p {
+	text-align: center;
+}
+
+footer a {
+	color: inherit;
+}
+/* ------ INTERACTIONS (footer) -------------- */
+footer a:hover,
+footer a:focus {
+	color: var(--bg__footer);
+	background-color: var(--text__r1-strong);
+
+	transition: background-color 250ms ease-out;
+}

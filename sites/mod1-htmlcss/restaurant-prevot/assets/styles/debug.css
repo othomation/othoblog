@@ -1,0 +1,163 @@
+/* ================================ MAIN CSS ===================================
+AUTEUR ---- rogler othmane
+================================ DEBUG CSS =====================================
+Ce fichier a été fait pendant le temps de l'exercice, il n'a pas forcément 
+vocation à être utilisé tel quel pour d'autres projets, mais il reste, à mon 
+sens, flexible.
+---------------
+le texte affiché (correspondant au nom de la balise associé) pour chaque 
+`::after` est centré, en haut de l'élement associé.
+Il est possible qu'il ne soit pas visible (alors que le fond l'est) si un autre
+élement, avec un `z-index` supérieur le surplombe, ne serait-ce que 
+partiellement, en haut à gauche.
+============================================================================= */
+
+body,
+main,
+div,
+header,
+nav,
+section,
+article,
+p,
+h1,
+h2,
+figure,
+footer {
+	position: relative;
+}
+
+body::after,
+main::after,
+div::after,
+header::after,
+nav::after,
+section::after,
+article::after,
+p::after,
+h1::after,
+h2::after,
+figure::after,
+img::after,
+a::after,
+footer::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	text-align: left;
+}
+
+/* A noter: le z-index est spécifié pour la valeur 0 également,
+(malgré que ce soit la valeure par défaut),pour pouvoir facilement 
+jouer avec sur l'inspecteur. */
+body::after {
+	content: "body";
+	background-color: lightcyan !important;
+	z-index: -2;
+}
+
+main::after {
+	content: "MAIN";
+
+	background-color: lightcoral !important;
+	z-index: -1;
+}
+
+header::after {
+	content: "HEADER";
+	background-color: aqua !important;
+	text-align: inherit;
+	z-index: 0;
+}
+
+nav::after {
+	content: "NAV";
+
+	background-color: aquamarine !important;
+	z-index: 0;
+}
+
+section::after {
+	content: "SECTION";
+
+	background-color: yellowgreen !important;
+	z-index: 0;
+}
+
+div::after {
+	content: "DIV";
+	background-color: brown !important;
+	z-index: 0;
+}
+
+div::after {
+	content: "DIV";
+	background-color: brown !important;
+	z-index: 1;
+}
+
+article::after {
+	content: "ARTICLE";
+	color: white;
+
+	background-color: blueviolet !important;
+	z-index: 0;
+}
+
+p::after {
+	content: "P";
+	background-color: cadetblue !important;
+	z-index: 2;
+}
+
+h1::after {
+	content: "H1";
+	background-color: red !important;
+	z-index: 1;
+	text-align: left;
+	font-size: 1em;
+}
+
+h2::after {
+	content: "H2";
+	background-color: coral;
+	z-index: 1;
+}
+
+figure::after {
+	content: "FIGURE";
+	background-color: cornflowerblue;
+	z-index: 4;
+}
+
+img::after {
+	content: "IMG";
+
+	background-color: violet;
+	z-index: 1;
+}
+
+footer::after {
+	content: "FOOTER";
+
+	background-color: darkblue;
+	z-index: 0;
+}
+
+a::after {
+	content: "A";
+	background-color: tan;
+	z-index: 0;
+}
+
+*:nth-child(odd)::after {
+	border: 10px solid yellow !important;
+}
+
+*:nth-child(even)::after {
+	border: 10px solid blue !important;
+}

@@ -1,0 +1,115 @@
+/* MEDIA QUERY */
+/* 
+@media screen {
+}
+
+@media print {
+	header {
+		background-color: aliceblue;
+	}
+}
+
+@media print, speech {
+}
+
+@media speech {
+}
+
+@media all {
+} */
+
+/* ================ MIN 640 PX ================ */
+@media screen and (min-width: 640px) {
+	html {
+		font-size: 120%;
+	}
+	* {
+		transition: display 1000ms ease-out;
+	}
+	main article {
+		display: flex;
+	}
+
+	main {
+		padding: 20px 15%;
+	}
+
+	main figure {
+		margin-left: 20px;
+	}
+	main p {
+		width: 65%;
+	}
+}
+
+/* ================ MIN 1200 PX ================ */
+@media screen and (min-width: 1200px) {
+	/* ======== NAV ======== */
+	/* ==== Je cache le burger ==== */
+	.burger,
+	.c__burger {
+		display: none;
+	}
+	/* ==== Je montre la navigation ==== */
+	nav ul {
+		display: flex;
+		list-style-type: none;
+	}
+
+	nav ul li {
+		width: 25%;
+	}
+
+	nav ul li a {
+		display: block;
+		background-color: coral;
+		text-align: center;
+		padding: 5px 0;
+		transition: opacity 300ms ease-out;
+	}
+
+	nav ul li a:hover,
+	nav ul li a:focus {
+		opacity: 0.6;
+	}
+
+	/* ======== SECTION/ARTICLE ======== */
+	section {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	main article {
+		width: 48%;
+		margin-bottom: 40px;
+	}
+
+	main article + article {
+		margin-top: 0;
+	}
+}
+
+/* ================ MIN 1600 PX ================ */
+@media screen and (min-width: 1600px) {
+	main article {
+		width: 22%;
+		display: block;
+	}
+	main p {
+		width: 100%;
+	}
+	main figure {
+		width: 60%;
+		float: right;
+		margin-right: 8px;
+	}
+}
+
+/* ================ MIN 2000 PX ================ */
+@media screen and (min-width: 2000px) {
+	#wrapperStatic {
+		width: 1900px;
+		margin: 0 auto;
+	}
+}
