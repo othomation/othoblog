@@ -52,8 +52,7 @@ Voici le maquette :
 
 > L'intégration, en deux fois, d'une page de templates psd.
 
-
-> Petite note : il y a également une mini page afin de pratiquer le responsive que nous avait fait, et je vais simplement vous mettre à disposition le lien live plus bas. Il n'ya pas de maquette, ni d'explications. Pour celui ci, c'était l'approche mobile-first (que l'on gardera par la suite), contrairement à l'exercice PSD templates qui fait l'inverse.
+Petite note : il y a également une mini page afin de pratiquer le responsive que nous avait fait, et je vais simplement vous mettre à disposition le lien live plus bas. Il n'ya pas de maquette, ni d'explications. Pour celui ci, c'était l'approche mobile-first (que l'on gardera par la suite), contrairement à l'exercice PSD templates qui fait l'inverse.
 
 Ici, on passe un léger cran au dessus car l'exercice nous amène quelques problématiques.
 
