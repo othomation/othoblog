@@ -56,13 +56,18 @@ Petite note : il y a également une mini page afin de pratiquer le responsive qu
 
 Ici, on passe un léger cran au dessus car l'exercice nous amène quelques problématiques.
 
+
 Nous avons d'abord fait une intégration à largeur fixe, pour ordinateur. Quelques jours plus tards, nous reprendrons le projet pour l'adapter rapidement au format mobile, ce qui nous a appris les base du responsive et l'utilisation des requêtes médias (ou _media queries_ en anglais).
+
 
 Une des problématiques principales était de réussir à correctement placer et dimensioner les trois blocs-image, dont un qui contenait une image plus petite, qu'il fallait conteneuriser dans un bloc qui doit se comporter pareillement que ses adelphes.
 
+
 Aussi, nous avons pu voir quelques effets d'animations (okay les miennes sont très _glossy_ mais c'est pour le sport).
 
+
 Pour la version mobile, nous avons simplement utilisé un seul breakpoint, et avons du restyliser le menu pour qu'il apparaisse par-dessus les autres élements. Egalement, nous avons implémenté un simili bouton _burger_, qui, pour le moment, n'est pas interactif. Le menu apparaît automatiquement, car nous n'avons pas encore abordé le `javascript`.
+
 
 Voici la [version live de l'exercice responsive sans maquette](sites/mod1-htmlcss/responsive)
 
@@ -79,6 +84,7 @@ Voici la maquette :
 
 Cet exercice a surtout pour but de nous faire retravailler ce qu'on a vu dans les derniers jours, afin de valider nos acquis. La correction s'est étalée sur toute une journée, afin de confirmer ce que l'on sait.
 
+
 Je suis allé légèrement plus loin en proposant un fichier `debug.css` qui permet de mettre l'emphase sur les différents blocs et élements de la page, en superposant un bloc de même taille coloré. Une propriété z-index est liée à chaque `::after` pour jouer avec sur l'inspecteur. Activez la balise `<link>` associé au fichier `debug.css` sur l'inspecteur pour tester si vous le souhaitez.
 
 
@@ -94,6 +100,7 @@ Voici la maquette :
 Toujours avec _Karine_, job coach, nous avons fait différents ateliers collectifs et individuels.
 Pour cette fois, je ne raconterai pas le déroulé, malgré sa pertinence !
 
+
 J'ai pu voir _Karine_ en entretien individuel, où nous avons parlé de mon parcours pour qu'elle puisse mieux me comprendre, et m'accompagner vers l'emploi.
 
 ---
@@ -101,5 +108,6 @@ J'ai pu voir _Karine_ en entretien individuel, où nous avons parlé de mon parc
 # Voilà !
 
 Et c'était tout pour la seconde et troisième semaine de la formation.
+
 
 N'hésitez pas à réagir sur mon [linkedin](https://www.linkedin.com/in/otho/).
